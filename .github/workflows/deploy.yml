@@ -1,10 +1,5 @@
-name: Deploy Website on WHC
-
-on:
-  push:
-    branches:
-      - main
-
+on: push
+name: 🚀 Deploy website on WHC
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -19,15 +14,4 @@ jobs:
         server:  ${{ secrets.FTP_HOST }}
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASS }}
-        server-dir: public_html/
-
-    - name: Set up FTP deployment
-      env:
-        FTP_HOST: ${{ secrets.FTP_HOST }}
-        FTP_USER: ${{ secrets.FTP_USER }}
-        FTP_PASS: ${{ secrets.FTP_PASS }}
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y curl
-        chmod +x ./deploy.sh
-        ./deploy.sh
+        server-dir: ./public_html/
