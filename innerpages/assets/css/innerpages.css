@@ -1912,7 +1912,7 @@ h5,h3,h6{
         .about-pg-style1 .tc-process-style2 .accordion-item .accordion-button::after {
           background-image: none;
           content: "\f067";
-          /* font-family: "Font Awesome 5 Pro"; */
+          font-family: "Font Awesome 5 Pro";
           -webkit-transform: rotate(0) !important;
           -ms-transform: rotate(0) !important;
           transform: rotate(0) !important; }
@@ -2241,7 +2241,7 @@ h5,h3,h6{
           color: #000 !important;
           text-decoration: underline; }
       .about-pg-style1 .tc-awards-style2 .award-card .logo {
-        height: 35px; }
+        height: 135px; }
       .about-pg-style1 .tc-awards-style2 .award-card .title {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2250,7 +2250,9 @@ h5,h3,h6{
         -ms-flex-align: end;
         align-items: end;
         margin: 15px 0;
-        min-height: 90px; }
+        min-height: 60
+        
+        px; }
   @media screen and (max-width: 991px) {
     .about-pg-style1 .tc-awards-style2 {
       padding: 80px 0; } }
@@ -2676,3 +2678,7 @@ h5,h3,h6{
     .cl-drkbl {
       color: #0D4378 !important;
     }
+
+
+  
+  
