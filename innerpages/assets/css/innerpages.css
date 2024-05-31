@@ -1,6 +1,23 @@
 /* ========= [ * page-home_3 ]  =========*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+.form {
+  display: block; }
+  .form label {
+    display: block;
+    font-size: 10px;
+    color: #000;
+    text-transform: uppercase; }
+   .form .form-control {
+    border: 0;
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid #45A6C2 !important;
+    padding: 10px 0;
+    font-size: 14px; }
+  .form .form-control:hover, .s-project-pg-style2 .tc-contact-style2 .form .form-control:focus {
+      border-color: #000; }
+
 .bg-pr{
   background-color: #F3F6FA;
 }
@@ -378,7 +395,7 @@ h5,h3,h6{
     .portfolio-pg-style1 .tc-latest-cases-style1 .filter .links a.active {
       color: rgba(7, 28, 54, 1); }
   .portfolio-pg-style1 .tc-latest-cases-style1 .content {
-    padding: 150px 0;
+    padding: 40px 0;
     border-top: 1px solid #ccc; }
     .portfolio-pg-style1 .tc-latest-cases-style1 .content .case-card {
       position: relative;
@@ -964,7 +981,7 @@ h5,h3,h6{
       border: 0;
       background-color: transparent;
       border-radius: 0;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #45A6C2 !important;
       padding: 10px 0;
       font-size: 14px; }
       .s-project-pg-style2 .tc-contact-style2 .form .form-control:hover, .s-project-pg-style2 .tc-contact-style2 .form .form-control:focus {
@@ -1473,6 +1490,7 @@ h5,h3,h6{
 /* --------------- portfolio pg style1 --------------- */
 .contact-pg-style1 {
   position: relative; }
+
   .contact-pg-style1 .social-icons a {
     width: 35px;
     height: 35px;
@@ -1488,10 +1506,12 @@ h5,h3,h6{
     -ms-flex-pack: center;
     justify-content: center;
     margin: 0 5px; }
+
     .contact-pg-style1 .social-icons a:hover {
       background-color: var(--color-orange1);
       border-color: var(--color-orange1);
       color: #fff; }
+
   .contact-pg-style1 .tc-map-style1 {
     position: relative;
     padding: 90px 4vw 120px;
@@ -1499,6 +1519,7 @@ h5,h3,h6{
     margin-bottom: -30px;
     background-color: #fff;
     z-index: 10; }
+
     .contact-pg-style1 .tc-map-style1 .map-card {
       border-radius: 15px;
       overflow: hidden;
@@ -1516,8 +1537,10 @@ h5,h3,h6{
     padding: 150px 0;
     background-color: #F3F6FA;
     overflow: hidden; }
+
     .contact-pg-style1 .tc-contact-form-style1 .form {
       display: block; }
+      
       .contact-pg-style1 .tc-contact-form-style1 .form label {
         display: block;
         font-size: 10px;

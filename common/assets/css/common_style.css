@@ -1792,12 +1792,13 @@ input:focus {
 .hover-bg-darkbl {
   border: 1px solid #45A6C2 !important;
   color: #45A6C2;
+  background-color: transparent;
 }
 
 .hover-bg-darkbl:hover {
   background-color: #0D4378;
   color: white;
-  border: none;
+  border-color: none;
 }
 
 
