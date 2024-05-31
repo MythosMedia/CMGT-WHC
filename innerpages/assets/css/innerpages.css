@@ -1928,7 +1928,6 @@ h5,h3,h6{
           color: #666; }
     .about-pg-style1 .tc-process-style2 .imgs {
       position: relative;
-      background-image: url(../img/bubbles.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center; }
@@ -2270,7 +2269,7 @@ h5,h3,h6{
       font-size: 90px;
       font-weight: 600; }
       .services-pg-style1 .tc-header-style2 .top-info h1 span {
-        color: var(--color-orange1);
+        /* color: var(--color-orange1); */
         font-style: italic;
         font-weight: 400; }
     .services-pg-style1 .tc-header-style2 .top-info .award-wrapper {
@@ -2323,10 +2322,10 @@ h5,h3,h6{
         margin-top: 50px; } }
   .services-pg-style1 .tc-services-style1 {
     position: relative;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#F1EEE9), color-stop(#F1EEE999), to(transparent));
-    background-image: -webkit-linear-gradient(top, #F1EEE9, #F1EEE999, transparent);
-    background-image: -o-linear-gradient(top, #F1EEE9, #F1EEE999, transparent);
-    background-image: linear-gradient(to bottom, #F1EEE9, #F1EEE999, transparent);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f3f6fa), color-stop(#f3f6fa), to(transparent));
+    background-image: -webkit-linear-gradient(top, #f3f6fa, #f3f6fa, transparent);
+    background-image: -o-linear-gradient(top, #f3f6fa, #f3f6fa, transparent);
+    background-image: linear-gradient(to bottom, #f3f6fa, #f3f6fa, transparent);
     border-radius: 50px 50px 0 0; }
     .services-pg-style1 .tc-services-style1 .title p {
       letter-spacing: 50px;
@@ -2349,10 +2348,10 @@ h5,h3,h6{
       border-inline-start: 1px solid #ccc;
       display: block; }
       .services-pg-style1 .tc-services-style1 .service-card:hover .arrow {
-        background-color: #000;
+        background-color: #0D4378;
         color: #fff; }
       .services-pg-style1 .tc-services-style1 .service-card .icon {
-        color: var(--color-orange1);
+        color: #45A6C2;
         margin-bottom: 20px;
         font-size: 30px; }
       .services-pg-style1 .tc-services-style1 .service-card .img {
@@ -2544,11 +2543,11 @@ h5,h3,h6{
           margin: 0; }
           .services-pg-style1 .tc-testimonials-style1 .tc-clients-style1 .slider-controls .swiper-button-next::after,
           .services-pg-style1 .tc-testimonials-style1 .tc-clients-style1 .slider-controls .swiper-button-prev::after {
-            color: #000;
+            color: #0D4378;
             font-size: 12px; }
           .services-pg-style1 .tc-testimonials-style1 .tc-clients-style1 .slider-controls .swiper-button-next:hover::after,
           .services-pg-style1 .tc-testimonials-style1 .tc-clients-style1 .slider-controls .swiper-button-prev:hover::after {
-            color: var(--color-orange1); }
+            color: #0D4378; }
         .services-pg-style1 .tc-testimonials-style1 .tc-clients-style1 .slider-controls .swiper-pagination {
           position: static;
           margin: 0 10px; }
@@ -2578,7 +2577,7 @@ h5,h3,h6{
         -webkit-text-stroke: 1px #000;
         color: transparent; }
         .services-pg-style1 .tc-testimonials-style1 .marq-slider a:hover {
-          color: #000; }
+          color: #0D4378  }
   @media screen and (max-width: 991px) {
     .services-pg-style1 .tc-testimonials-style1 {
       padding: 50px 0; }
@@ -2672,3 +2671,8 @@ h5,h3,h6{
     font-size: 70px;
     line-height: 100px;
     margin-bottom: 30px; } }
+
+
+    .cl-drkbl {
+      color: #0D4378 !important;
+    }
