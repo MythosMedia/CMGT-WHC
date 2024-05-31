@@ -204,14 +204,14 @@ small.text {
   top: 0;
   width: 100vw;
   height: 110vh;
-  fill: #F3F6FA; }
+  fill: #F3F6FA !important; }
 
 .loader-wrap .loader-wrap-heading .load-text {
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
-  color: #000;
+  color: #000 !important;
   z-index: 20; }
 
 .load-text span {
