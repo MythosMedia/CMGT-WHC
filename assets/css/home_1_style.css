@@ -3,6 +3,10 @@
 h5,h3,h6{
   color: #071C36 !important;
 }
+main {
+  background-color: #F3F6FA;
+
+}
 /* --------------- side_menu_style4 --------------- */
 .side_menu_style4 {
   position: fixed;
@@ -1156,3 +1160,62 @@ html[lang="ar"] .home-style1 {
     transform: rotateX(180deg); }
   html[lang="ar"] .home-style1 .loader-wrap {
     direction: ltr; }
+
+
+   .tc-team-style1 {
+    padding: 40px 0;
+    margin-bottom: 40px; /* Adding gap between sections */
+}
+
+.another-section {
+    padding: 40px 0;
+}
+
+.ceo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ceo-image {
+    flex-shrink: 0;
+}
+
+.img-rounded {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ceo-info {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.ceo-name {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.ceo-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.ceo-description {
+    font-size: 1.2em;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+
+    .img-rounded {
+        max-width: 300px;
+    }
+}
