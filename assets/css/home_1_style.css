@@ -481,6 +481,7 @@ main {
       object-fit: cover;
       -o-object-position: bottom;
       object-position: bottom; }
+
 @media screen and (max-width: 991px) {
   .tc-services-style1 .service-card {
     border: 0;
