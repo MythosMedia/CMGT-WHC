@@ -1829,6 +1829,7 @@ input:focus {
 
 .sc-cl{
   color: #071C36;
+  text-decoration: none;
 }
 
 .active{
@@ -1839,9 +1840,6 @@ input:focus {
   color: #0D4378 !important; ;
 }
 
-.sc-cl:hover{
-  color: #45A6C2 ;
-}
 
 .cl-white{
   color: white !important;
