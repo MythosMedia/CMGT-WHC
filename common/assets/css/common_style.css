@@ -39,7 +39,7 @@ html::-webkit-scrollbar-corner {
   border-radius: 10px; }
 
 body {
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
   text-decoration: none;
   font-size: 14px;
   overflow-x: hidden;
@@ -187,7 +187,8 @@ small.text {
   justify-content: center !important; }
 
 .fm-playfair {
-  font-family: 'Playfair Display', serif; }
+  /* font-family: 'Playfair Display', serif;  */
+}
 
 /* Preloader
 -----------------------------------------------------------------*/
@@ -1834,6 +1835,17 @@ input:focus {
   color: #45A6C2;
 }
 
+.active-cl{
+  color: #0D4378 !important; ;
+}
+
+.sc-cl:hover{
+  color: #45A6C2 ;
+}
+
 .cl-white{
   color: white !important;
+}
+.fszvm{
+  font-size: 2rem;
 }
