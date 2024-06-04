@@ -4,7 +4,7 @@
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -219,8 +219,8 @@ h5,h3,h6{
     .img-cover {
       width: 100%;
       height: 100%;
-      -o-object-fit: cover;
-      object-fit: cover;
+      -o-object-fit: fill;
+      object-fit: fill;
       display: inherit;
     } 
     .custom-img-size {
@@ -2698,4 +2698,85 @@ h5,h3,h6{
 
 
   
+    .video-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
   
+  .video-container iframe {
+      width: 70%; /* Takes up 70% of its container */
+      height: 600px;
+      border: 0; /* Removes the border around the iframe */
+  }
+  
+  /* Media Query for screens smaller than 768px */
+  @media (max-width: 768px) {
+      .video-container iframe {
+          width: 80%; /* Takes full width of its container */
+          height: 350px;
+      }
+      .tc-inner-header-style1 h1{
+        margin-bottom: 0 !important;
+      }
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusts space between elements */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+
+.load-more {
+    display: block;
+    margin: 10px auto 30px;
+    /* padding: 10px 0; */
+    color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+}
+
+.social-media-section .container {
+  text-align: center; /* Centers the content */
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto; /* Centers the container horizontally */
+}
+
+.social-media-section .title {
+  font-size: 24px;
+  margin-bottom: 20px; /* Space between title and icons */
+}
+.social-media-section .social-icons a.icon {
+  font-size: 24px;  /* Size of the icons */
+  margin: 0 10px;  /* Space between each icon */
+  color: #fff;  /* Icon color */
+  transition: color 0.3s ease;  /* Smooth transition for color change */
+  background: #0D4378 ;  /* Background color of the icons */
+  display: inline-flex;  /* Makes the anchor behave like a flexbox container */
+  justify-content: center;  /* Centers the icon horizontally */
+  align-items: center;  /* Centers the icon vertically */
+  border-radius: 50%;  /* Makes the background circle */
+  padding: 10px;  /* Padding around the icon */
+  width: 50px;  /* Total width including padding */
+  height: 50px;  /* Total height including padding */
+  text-decoration: none;  /* Removes underline from links */
+}
+
+
+.social-media-section .social-icons a.icon:hover {
+  color: #45A6C2 ; /* Darker shade on hover, adjust color as needed */
+}
+
+@media (max-width: 480px) {
+  .social-media-section .social-icons a.icon {
+      font-size: 20px; /* Smaller icon size on small screens */
+      margin: 0 5px;
+  }
+}
