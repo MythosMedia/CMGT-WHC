@@ -473,14 +473,30 @@ main {
   .tc-services-style1 .ser-img {
     width: 100%;
     height: 1000px;
-    margin-top: -550px; }
+    margin-top: -550px;
+    position: relative;
+   }
     .tc-services-style1 .ser-img img {
       width: 100%;
       height: 100%;
       -o-object-fit: cover;
       object-fit: cover;
       -o-object-position: bottom;
-      object-position: bottom; }
+      object-position: bottom;
+    position: relative; }
+
+ .tc-services-style1 .ser-img .overlay-text{
+      z-index: 555555;
+  color: #0D4378;
+  position: absolute;
+  top: 65%;
+  font-size: 4.5rem;
+  max-width: 450;
+  width: 100%;
+  text-align: center;
+  padding: 0 10px;
+    }
+
 @media screen and (max-width: 991px) {
   .tc-services-style1 .service-card {
     border: 0;
