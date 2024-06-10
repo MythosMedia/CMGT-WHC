@@ -2794,3 +2794,15 @@ h5,h3,h6{
       padding-left: 0;  /* Removes padding on mobile screens */
   }
 }
+
+
+.h3-contact {
+  text-align: left; /* Ensures the text is left-aligned on larger screens */
+}
+
+/* Center alignment for small screens */
+@media (max-width: 992px) { /* Adjusts for tablets and smaller devices */
+  .h3-contact {
+      text-align: center; /* Centers the text on smaller screens */
+  }
+}
