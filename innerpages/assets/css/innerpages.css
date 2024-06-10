@@ -2780,3 +2780,17 @@ h5,h3,h6{
       margin: 0 5px;
   }
 }
+
+
+@media (min-width: 768px) {
+  .p-left {
+      padding-left: 55px;  /* Adjust the padding value as per your design requirements */
+  }
+}
+
+/* Remove padding for .col-3 in mobile view */
+@media (max-width: 990px) {
+  .p-left {
+      padding-left: 0;  /* Removes padding on mobile screens */
+  }
+}
