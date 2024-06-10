@@ -2260,16 +2260,16 @@ h5,h3,h6{
       .about-pg-style1 .tc-awards-style2 .award-card .logo {
         height: 135px; }
       .about-pg-style1 .tc-awards-style2 .award-card .title {
-        display: -webkit-box;
+        /* display: -webkit-box;
         display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: end;
-        -ms-flex-align: end;
-        align-items: end;
+        display: flex; */
+        /* -webkit-box-align: end;
+        -ms-flex-align: end; */
+        /* align-items: end; */
         margin: 15px 0;
-        min-height: 60
-        
-        px; }
+        min-height: 60;
+        text-align: center;
+}
   @media screen and (max-width: 991px) {
     .about-pg-style1 .tc-awards-style2 {
       padding: 80px 0; } }
