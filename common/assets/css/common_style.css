@@ -1864,3 +1864,10 @@ input:focus {
 .fszvm{
   font-size: 2rem;
 }
+
+.line{
+  background-color: #45A6C2 ;
+  height: 2px;
+  width: 80%;
+  position: relative;
+}

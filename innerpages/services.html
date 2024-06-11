@@ -41,10 +41,10 @@
     <!-- bootstrap 5 -->
     <link rel="stylesheet" href="../common/assets/css/lib/bootstrap.min.css">
 
-    <!-- font family -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- fontawesome icons  -->
     <link rel="stylesheet" href="../common/assets/css/lib/all.min.css">
@@ -124,15 +124,13 @@
     <div id="scrollsmoother-container">
 
         <!--  Start navbar  -->
-        <nav class="navbar navbar-expand-lg .navbar-light inner-navbar-style1">
+        <nav class="navbar navbar-expand-lg .navbar-light inner-navbar-style1" style="background: #f3f6fa;">
             <div class="container-fluid">
                 <a class="navbar-brand me-lg-5" href="/">
                     <img src="assets/img/CMGT logo-Black.svg" width="100" height="41" alt="" class="logo">
 
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span> <i class="la la-grip-lines"></i> </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -144,7 +142,7 @@
                             <a class="nav-link" href="../innerpages/about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  href="../innerpages/portfolio.html">Projects</a>
+                            <a class="nav-link" href="../innerpages/portfolio.html">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" style="color: #45A6C2 !important" href="../innerpages/services.html">Services</a>
@@ -180,10 +178,10 @@
 
 
         <!--  Start header  -->
-        <header class="tc-inner-header-style1">
-            <div class="container">
+        <header class="tc-inner-header-style1" style="translate: none; rotate: none; scale: none; transform: translate(0px);background: #f3f6fa;">
+            <div class="container" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px);">
                 <div class="info col-lg-7">
-                    <h1 class="js-title drk-bl" style="border-bottom: 1px solid #ccc;"> Services </h1>
+                    <h1 class="js-title drk-bl" style="border-bottom: 1px solid #ccc;"> <div style="position:relative;display:inline-block;">S</div><div style="position:relative;display:inline-block;">e</div><div style="position:relative;display:inline-block;">r</div><div style="position:relative;display:inline-block;">v</div><div style="position:relative;display:inline-block;">i</div><div style="position:relative;display:inline-block;">c</div><div style="position:relative;display:inline-block;">e</div><div style="position:relative;display:inline-block;">s</div> </h1>
                     <!-- <div class="text fsz-18 color-666" style="padding-left:20px;"> Architecture is a visual art, and the building <br> speak for
                         themselves </div> -->
                 </div>
@@ -437,7 +435,7 @@
          <section class="tc-contact-form-style1" style="background-color:#f3f6fa">
             <div class="container">
                 <!-- <h2 class="fsz-45 fw-500 text-center mb-30 drk-bl"> Contact <span class="sub-font fst-italic cl-pr fw-400"> Us </span> </h2> -->
-                <h2 class="fsz-45 cl-drkbl text-center"> Contact Us</h2>
+                <h2 class="fsz-45 cl-drkbl text-center pt-5"> Contact Us</h2>
 
 
                 <div class="row justify-content-between mt-10">
@@ -452,7 +450,7 @@
                                 </div>
                                 <div class="d-flex flex-lg-row flex-column align-items-center gap-4 contact-item">
                                     <i class="fsz-30 fa-solid fa-location-dot" style="color: #0D4378;"></i>
-                                    <a class="fsz-20 contact-text" href="https://g.co/kgs/TjB4jR4">8828 Heather St Unit 110, Vancouver, BC V5X 0A8, Canada</a>
+                                    <a class="fsz-20 h3-contact " href="https://g.co/kgs/TjB4jR4">8828 Heather St Unit 110, Vancouver, BC V5X 0A8, Canada</a>
                                 </div>
                                 <div class="d-flex flex-lg-row flex-column align-items-center gap-4 contact-item">
                                     <i class="fsz-30 fa-solid fa-envelope" style="color: #0D4378;"></i>
@@ -510,7 +508,7 @@
                             <button type="submit" class="butn hover-bg-darkbl text-capitalize rounded-pill mt-40">
                                 <span>Send Your Message <i class="fal fa-arrow-up-right ms-2"></i></span>
                             </button>
-                            <p class="fsz-12 color-666 mt-20">By submitting, I agree to the <a href="#" class="bl-hover text-decoration-underline">Terms & Conditions</a></p>
+                            <p class="fsz-12 color-666 mt-20 pb-5">By submitting, I agree to the <a href="#" class="bl-hover text-decoration-underline">Terms & Conditions</a></p>
 
 
                             <!-- Success Popup -->
@@ -572,7 +570,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 p-left">
                             <div class="branch-card">
                                 <h5 class="mb-20 mt-5 mt-lg-0 fw-600 cl-drkbl"> Links </h5>
                                 <ul class="footer-links">
@@ -580,8 +578,8 @@
                                     <li> <a href="/innerpages/about.html"> About us</a> </li>
                                     <li> <a href="/innerpages/portfolio.html">Projects</a> </li>
                                     <li> <a href="/innerpages/services.html">Services</a> </li>
-                                    <li> <a href="/innerpages/contact.html">Contact</a> </li>
                                     <li> <a href="/innerpages/media.html">Media</a> </li>
+                                    <li> <a href="/innerpages/contact.html">Contact</a> </li>
 
                                 </ul>
                             </div>
@@ -606,8 +604,8 @@
                                 <a href="../innerpages/about.html"> About Us </a>
                                 <a href="../innerpages/portfolio.html"> Projects </a>
                                 <a href="../innerpages/services.html"> Services </a>
+                                <a href="../innerpages/media.html">Media</a> 
                                 <a href="../innerpages/contact.html"> Contact </a>
-                                <a href="../innerpages/media.html">Media</a>
 
                             </div>
                         </div>
