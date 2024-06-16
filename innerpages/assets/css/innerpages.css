@@ -414,7 +414,7 @@ h5,h3,h6{
     background-color: transparent;
     padding: 0;
     -webkit-margin-end: 50px;
-    margin-inline-end: 50px;
+    /* margin-inline-end: 50px; */
     text-transform: capitalize; }
     .portfolio-pg-style1 .tc-latest-cases-style1 .filter .links a.active {
       color: rgba(7, 28, 54, 1); }
@@ -460,7 +460,9 @@ h5,h3,h6{
     margin-inline-end: 15px;
     font-weight: bold; }
   .portfolio-pg-style1 .tc-latest-cases-style1 .content {
-    padding: 80px 0; }
+
+    padding: 80px 0;
+   }
     .portfolio-pg-style1 .tc-latest-cases-style1 .content .case-card {
       margin-bottom: 50px; }
       .portfolio-pg-style1 .tc-latest-cases-style1 .content .case-card .img {
@@ -2705,22 +2707,22 @@ h5,h3,h6{
 
   
     .video-container {
-      width: 100%;
+      /* width: 100%; */
       display: flex;
       justify-content: center;
       align-items: center;
   }
   
   .video-container iframe {
-      width: 90%; /* Takes up 70% of its container */
-      height: 700px;
+      width: 100%; /* Takes up 70% of its container */
+      height: 600px;
       border: 0; /* Removes the border around the iframe */
   }
   
   /* Media Query for screens smaller than 768px */
   @media (max-width: 768px) {
       .video-container iframe {
-          width: 80%; /* Takes full width of its container */
+          width: 100%; /* Takes full width of its container */
           height: 350px;
       }
       .tc-inner-header-style1 h1{
@@ -2811,4 +2813,9 @@ h5,h3,h6{
   .h3-contact {
       text-align: center; /* Centers the text on smaller screens */
   }
+}
+
+#media-slider img{
+  height: 700px;
+  position: relative;
 }

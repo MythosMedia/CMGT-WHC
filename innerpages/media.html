@@ -47,7 +47,11 @@
     <!-- bootstrap 5 -->
     <link rel="stylesheet" href="../common/assets/css/lib/bootstrap.min.css">
 
-
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
 
     <!-- fontawesome icons  -->
     <link rel="stylesheet" href="../common/assets/css/lib/all.min.css">
@@ -71,7 +75,7 @@
     <link rel="stylesheet" href="assets/css/innerpages.css">
 </head>
 
-<body class="inner-pages-style1 portfolio-pg-style1">
+<body class="inner-pages-style1 about-pg-style1">
 
     <!-- ====== Start Loading ====== -->
 
@@ -81,8 +85,7 @@
         </svg>
         <div class="loader-wrap-heading">
             <div class="text-center">
-                <img src="../assets/img/CMGT logo-Black.svg"  style=" transform: scale(4);" alt="" class="logo">
-
+                <img loading="lazy" src="../assets/img/CMGT logo-Black.svg"  style=" transform: scale(4);" alt="" class="logo">
                 <div class="load-text">
                     <span>L</span>
                     <span>o</span>
@@ -94,7 +97,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 
 
     <!--  start side_menu  -->
@@ -105,44 +108,43 @@
             <div class="main_links">
                 <ul>
                     <li> <a href="/" class="main_link"> home </a> </li>
-                    <li><a href="../innerpages/about.html" class="main_link"> About Us </a></li>
+                    <li><a class="nav-link" href="../innerpages/about.html" class="main_link"> About us </a></li>
                     <li> <a href="../innerpages/portfolio.html" class="main_link"> Projects </a> </li>
                     <li> <a href="../innerpages/services.html" class="main_link"> Services </a> </li>
                     <!-- <li> <a href="../innerpages/blog.html" class="main_link"> news </a> </li> -->
-                    <li>
-                        <a href="../innerpages/media.html" class="main_link"> Media </a>
-                    </li>
                     <li> <a href="../innerpages/contact.html" class="main_link"> contact </a> </li>
+                    <li> <a href="../innerpages/media.html" class="main_link"> Media </a> </li>
+
                 </ul>
             </div>
         </div>
-        <!-- <img src="assets/img/chat_pat2.png" alt="" class="side_shape">
-        <img src="assets/img/chat_pat2.png" alt="" class="side_shape2">
-        <span class="clss"> <i class="la  la-times"></i> </span> -->
+        <!-- <img loading="lazy" src="assets/img/chat_pat2.png" alt="" class="side_shape">
+        <img src="assets/img/chat_pat2.png" alt="" class="side_shape2"> -->
+        <span class="clss"> <i class="la  la-times"></i> </span>
     </div>
     <!--  End side_menu  -->
 
     <div id="scrollsmoother-container">
 
         <!--  Start navbar  -->
-        <nav class="navbar navbar-expand-lg .navbar-light inner-navbar-style1">
+        <nav class="navbar navbar-expand-lg navbar-dark inner-navbar-style1">
             <div class="container-fluid">
                 <a class="navbar-brand me-lg-5" href="/">
-                    <img src="assets/img/CMGT logo-Black.svg" width="100" height="41" alt="" class="logo">
+                    <img src="assets/img/logo-white-version.png" width="110" height="30" alt="" class="logo">
 
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span> <i class="la la-grip-lines"></i> </span>
+           
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            <a class="nav-link " aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../innerpages/about.html">About Us</a>
+                            <a class="nav-link active"  href="../innerpages/about.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../innerpages/portfolio.html">Projects</a>
@@ -154,13 +156,14 @@
                             <a class="nav-link" href="../innerpages/blog.html">News</a>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" style="color: #45A6C2 !important" href="../innerpages/media.html">Media</a>
+                            <a class="nav-link" style="color: #45A6C2" href="../innerpages/media.html">Media</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../innerpages/contact.html">Contact</a>
                         </li>
+
                     </ul>
-                    <div class="nav-side">
+                    <!-- <div class="nav-side"> -->
                         <!-- <a href="#" class="icon ms-3">
                             <span> EN </span>
                         </a>
@@ -173,46 +176,57 @@
                         <!-- <a href="#" class="icon ms-3 side_menu_btn fsz-21">
                             <span> <i class="la la-grip-lines"></i> </span>
                         </a> -->
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </nav>
         <!--  End navbar  -->
 
-
+        
         <!--  Start header  -->
-        <header class="tc-inner-header-style1" >
-            <div class="container">
-                <div class="info col-lg-8">
-                    <h1 style="border-bottom: 1px solid #ccc;margin-bottom: 50px;" class="js-title drk-bl"> CMGT TV </h1>
-                    <!-- <div class="text fsz-18 color-666" style="padding-left:20px;"> Architecture is a visual art, and the building <br> speak for
-                        themselves </div> -->
+        <header class="tc-header-preview">
+            <div class="slider-card">
+                <div id="media-slider">
+                    <img src="/assets/img/media-banner.jpg" alt="" class="img-fit" >
                 </div>
             </div>
+            <!-- <div class="float-social-links">
+                <ul>
+                    <li> <a href="https://twitter.com/CMGT_Builders"> <i class="fab fa-x-twitter"></i> </a> </li>
+                    <li> <a href="https://www.facebook.com/cmgtconstruction/"> <i class="fab fa-facebook-f"></i> </a> </li>
+                    <li> <a href="https://www.instagram.com/cmgt_construction/"> <i class="fab fa-instagram"></i> </a> </li>
+                </ul>
+            </div> -->
+            <!-- <div class="float-icons">
+                <ul>
+                    <li> <a href="#"> <i class="fal fa-desktop"></i> </a> </li>
+                    <li> <a href="#"> <i class="fal fa-comments-alt"></i> </a> </li>
+                    <li> <a href="#"> <i class="fal fa-file-alt"></i> </a> </li>
+                    <li> <a href="#"> <i class="fal fa-comment-lines"></i> </a> </li>
+                    <li> <a href="#"> <i class="fal fa-shopping-cart"></i> </a> </li>
+                </ul>
+            </div> -->
         </header>
         <!--  Start header  -->
 
 
         <!--Contents-->
-        <main>
-
-
-
-
-            <!--  Start latest-cases  -->
-         
-            <!--  End latest-cases  -->
-
-            <div class="video-container">
-                <iframe  src="https://www.youtube.com/embed/jjFY0Mo1TJo?si=UiSKxnawR8gK5PNi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            
-
-            <section class="tc-latest-cases-style1 mt-50">
-                <div class="container">
+        <div class="container">
+            <main>
+                <!-- Video container with the same column size as the case cards -->
+                <div class="row">
+                    <div class="col-lg-12 mb-30 ">
+                        <div class="video-container mt-5" >
+                            <iframe src="https://www.youtube.com/embed/jjFY0Mo1TJo?si=UiSKxnawR8gK5PNi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cases Section -->
+                <section class="tc-latest-cases-style1 mt-50">
                     <div class="content">
-                        <div class="header-container">
-                            <h3 class="fsz-45 text-capitalize mb-50 js-splittext-lines drk-bl">Subscribe & Stay Informed</h3>
+                        <div class="header-container mb-20">
+                            <h3 class="fsz-45 text-capitalize mb-5">Subscribe & Stay Informed</h3>
                             <a href="https://www.youtube.com/watch?v=3vQKy01NNUc&list=PL7taZjPOWPwun6K2f3gX48aIcFt8uytrR&pp=iAQB" class="butn border rounded-pill hover-bg-darkbl mb-10">
                                 <span> See All Videos <i class="small ms-1 ti-arrow-top-right"></i> </span>
                             </a>
@@ -221,6 +235,7 @@
                         <div class="cases">
                             <div class="cases-content wow fadeInUp slow" data-wow-delay="0.4s">
                                 <div class="row mixitup">
+                                    <!-- Repeat this block for each item -->
                                     <div class="col-lg-4 mix-item Architecture Landscape">
                                         <div class="case-card">
                                             <a href="https://www.youtube.com/watch?v=t8t6pA2GvYY" target="_blank" class="img" >
@@ -330,137 +345,35 @@
                                         </div>
                                     </div>
                                     <a href="https://www.youtube.com/watch?v=3vQKy01NNUc&list=PL7taZjPOWPwun6K2f3gX48aIcFt8uytrR&pp=iAQB" class="load-more">Load More</a> <!-- Load More Button -->
-                                </div>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="social-media-section mb-30">
-                <div class="container">
-                    <h2 class="fsz-45 cl-drkbl mb-30"> Follow Us </h2>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/cmgtconstruction/?_rdc=1&_rdr" class="icon" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://x.com/CMGT_Builders" class="icon" target="_blank">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                        <a href="https://www.instagram.com/cmgt_construction?igsh=MXR2ZGIxZHFwZmI2OQ==" class="icon" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=3vQKy01NNUc&list=PL7taZjPOWPwun6K2f3gX48aIcFt8uytrR&pp=iAQB" class="icon" target="_blank">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            
-
-
-
-
-
-            
-            <!-- <section class="tc-contact-form-style1 pt-10" >
-                <div class="container">
-                    <h2 class="fsz-45 cl-drkbl text-center"> Contact Us</h2>
-
-
-                    <div class="row justify-content-between mt-10">
-                        <div class="col-lg-4 mt-5 pr-5">
-                            <div class="info wow fadeInUp slow" data-wow-delay="0.2s">
-                                <h3 class="h3-contact fsz-45 fw-500 mb-50 drk-bl"> Let us help build your dream home! </h3>
-                                <div class="line mx-lg-0 mx-auto"></div>
-                                <div class="d-flex flex-column gap-5 mt-5 mb-5">
-                                    <div class="d-flex flex-lg-row flex-column align-items-center gap-4 contact-item">
-                                        <i class="fsz-30 fa-solid fa-phone" style="color: #0D4378;"></i>
-                                        <a href="tel:+1 604-222-2100" class="fsz-20 contact-text">+1 604-222-2100</a>
-                                    </div>
-                                    <div class="d-flex flex-lg-row flex-column align-items-center gap-4 contact-item">
-                                        <i class="fsz-30 fa-solid fa-location-dot" style="color: #0D4378;"></i>
-                                        <a class="fsz-20 contact-text" href="#">8828 Heather St Unit 110, Vancouver, BC V5X 0A8, Canada</a>
-                                    </div>
-                                    <div class="d-flex flex-lg-row flex-column align-items-center gap-4 contact-item">
-                                        <i class="fsz-30 fa-solid fa-envelope" style="color: #0D4378;"></i>
-                                        <a class="fsz-20 contact-text" href="mailto:info@cmgt.ca">info@cmgt.ca</a>
-                                    </div>
-                                    <button type="button" class="fsz-18 butn hover-bg-darkbl text-capitalize rounded-pill mt-20" onclick="window.location.href='tel:+16042222100'">
-                                        <span><i class="fa-solid fa-phone me-2"></i>Call Us Now</span>
-                                    </button>
-                                    
+                                    <!-- End of repeat block -->
                                 </div>
                             </div>
                         </div>
-                        
-                        
-                        
-                        
-                        <div class="col-lg-6 mt-5">
-                            <form id="contact-form" class="form mt-5 mt-lg-0 wow fadeInUp slow" data-wow-delay="0.4s">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group mb-30">
-                                            <label for="fullName" class="bl-hover">Full name <span class="bl-hover">*</span></label>
-                                            <input type="text" name="fullName" id="fullName" class="form-control" placeholder="Your name">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group mb-30">
-                                            <label for="email" class="bl-hover">Email address <span class="bl-hover">*</span></label>
-                                            <input type="text" name="email" id="email" class="form-control" placeholder="Your email address">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group mb-30">
-                                            <label for="phone" class="bl-hover">Phone <span class="color-999">(optional)</span></label>
-                                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Your phone number">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group mb-30">
-                                            <label for="subject" class="bl-hover">Subject <span class="color-orange1">*</span></label>
-                                            <select name="subject" id="subject" class="form-select form-control">
-                                                <option value="">Select a subject</option>
-                                                <option value="subject1">Subject 1</option>
-                                                <option value="subject2">Subject 2</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group mb-30">
-                                            <label for="message" class="bl-hover">Message</label>
-                                            <textarea rows="6" name="message" id="message" placeholder="Write your message here" class="form-control"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="submit" class="butn hover-bg-darkbl text-capitalize rounded-pill mt-40">
-                                    <span>Send Your Message <i class="fal fa-arrow-up-right ms-2"></i></span>
-                                </button>
-                                <p class="fsz-12 color-666 mt-20">By submitting, I agree to the <a href="#" class="bl-hover text-decoration-underline">Terms & Conditions</a></p>
-
-
-                                <div id="success-popup" style="display:none; position: fixed; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #d4edda; color: #155724; border-radius: 5px; z-index: 1000;">
-                                    Email sent successfully!
-                                </div>
-                            
-                                <div id="error-popup" style="display:none; position: fixed; top: 20%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #f8d7da; color: #721c24; border-radius: 5px; z-index: 1000;">
-                                    Failed to send the email. Check console for errors.
-                                </div>
-                            </form>
-
+                    </div>
+                </section>
+    
+                <!-- Social Media Section -->
+                <section class="social-media-section mb-30">
+                    <div class="container">
+                        <h2 class="fsz-45 cl-drkbl mb-30"> Follow Us </h2>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/cmgtconstruction/?_rdc=1&_rdr" class="icon" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://x.com/CMGT_Builders" class="icon" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/cmgt_construction?igsh=MXR2ZGIxZHFwZmI2OQ==" class="icon" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=3vQKy01NNUc&list=PL7taZjPOWPwun6K2f3gX48aIcFt8uytrR&pp=iAQB" class="icon" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </section> -->
-
-
-
-
-
-        </main>
+                </section>
+            </main>
+        </div>
         <!--End-Contents-->
 
         <!--  Start footer  -->
@@ -534,7 +447,7 @@
                                 <a href="../innerpages/about.html"> About Us </a>
                                 <a href="../innerpages/portfolio.html"> Projects </a>
                                 <a href="../innerpages/services.html"> Services </a>
-                                <a href="../innerpages/media.html">Media</a> 
+                                <a href="../innerpages/media.html">Media</a>
                                 <a href="../innerpages/contact.html"> Contact </a>
 
                             </div>
@@ -576,33 +489,6 @@
 
     <!-- ===== home scripts ===== -->
     <script src="assets/js/innerpages.js"></script>
-
-    <script>
-        $(window).on("load", function () {
-            // ------- mixitup -------
-            mixitup('.mixitup', {
-                load: {
-                    sort: 'order:asc'
-                },
-                animation: {
-                    //   effects: 'fade rotateZ(-30deg) scale(0.4)',
-                    duration: 700
-                },
-                classNames: {
-                    block: 'filter',
-                    elementFilter: 'filter-btn',
-                    elementSort: 'sort-btn'
-                },
-                selectors: {
-                    target: '.mix-item'
-                }
-            });
-
-            $('.filter').on('click', '.filter-btn', function () {
-                $(this).addClass('active').siblings().removeClass('active');
-            });
-        });
-    </script>
 
 </body>
 
