@@ -179,17 +179,17 @@ $(document).ready(function () {
 $(function () {
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-    // create the smooth scroller FIRST!
-    const smoother = ScrollSmoother.create({
-        content: "#scrollsmoother-container",
-        smooth: 2,
-        normalizeScroll: true,
-        ignoreMobileResize: true,
-        effects: true,
-        //preventDefault: true,
-        //ease: 'power4.out',
-        //smoothTouch: 0.1,
-    });
+    // // create the smooth scroller FIRST!
+    // const smoother = ScrollSmoother.create({
+    //     content: "#scrollsmoother-container",
+    //     smooth: 1,
+    //     normalizeScroll: true,
+    //     ignoreMobileResize: true,
+    //     effects: true,
+    //     preventDefault: true,
+    //     ease: 'power4.out',
+    //     smoothTouch: 0.1,
+    // });
 
     // smoother.effects("img", { speed: "auto" });
 
