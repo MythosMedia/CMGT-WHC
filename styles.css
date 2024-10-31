@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Scroll snapping for all sections */
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 45px;
+}
+
+nav ul li {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.main {
+  height: 100vh;
+  background-image: url('assets/img/own/pr/2912 Trinity St 1.jpg'); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Overlay */
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 51, 0.473); /* Dark blue overlay */
+  z-index: 1;
+}
+
+.explore {
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  z-index: 2; /* Ensures text is above overlay */
+}
+
+.explore .line {
+  width: 60px;
+  height: 2px;
+  background-color: white;
+  margin: 10px auto 0;
+}
+
+.intro {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20px;
+  background-color: #fff;
+  gap:25px;
+}
+
+.intro p {
+  font-size: 1.7em;
+  line-height: 1.4;
+  color: #333;
+  max-width: 650px;
+}
+.intro h2{
+  font-size: 2.7em;
+}
+.title{
+  color: #0D4378 !important;
+}
+
+
+.project {
+  margin: 50px 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding:50px 20px;
+  /* background-color: #f9f9f9; */
+}
+
+.project-image img {
+  max-width: 85%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-info {
+  margin-top: 20px;
+}
+
+.project-info h2 {
+  font-size: 1.8em;
+  font-weight: 400;
+  color: #333;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+.view-project {
+  font-size: 1em;
+  color: #999;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.view-project:hover {
+  color: #666;
+}
+
+
+/* Service Section Layout */
+.service-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  height: 100vh; /* Each section takes full viewport height */
+  gap: 40px;
+  background-color: #f7f7f7;
+}
+
+/* Alternating Background for Visual Contrast */
+.service-section:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  padding: 20px;
+}
+
+.service-content h2 {
+  font-size: 2em;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.service-content p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+
+
+.service-link {
+  font-size: 1em;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.service-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .service-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust for smaller screens */
+    padding: 20px;
+  }
+
+  .service-image img {
+    max-width: 100%;
+  }
+}
