@@ -19,13 +19,3 @@ const images = [
   
   // Set initial background image
   changeBackgroundImage();
-  
-  document.addEventListener("wheel", (event) => {
-    event.preventDefault();
-    const scrollAmount = event.deltaY > 0 ? window.innerHeight : -window.innerHeight;
-    window.scrollBy({
-      top: scrollAmount,
-      behavior: "smooth",
-    });
-  }, { passive: false });
-  

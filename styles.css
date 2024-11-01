@@ -1,23 +1,28 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Scroll snapping for all sections */
+/* Enable smooth scroll and snap scroll behavior */
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
 
-section {
-  scroll-snap-align: start;
+/* Full-height sections for desktop */
+.full-section {
+  height: 100vh; /* Full viewport height */
+  scroll-snap-align: start; /* Snap alignment at start of each section */
 }
 
+/* General body styling */
 body {
   font-family: Arial, sans-serif;
 }
 
+/* Header styling */
 header {
   position: absolute;
   top: 0;
@@ -29,12 +34,14 @@ header {
   align-items: center;
 }
 
+/* Logo styling in the header */
 .logo {
   color: white;
   font-size: 1.5em;
   font-weight: bold;
 }
 
+/* Navigation menu styling */
 nav ul {
   list-style-type: none;
   display: flex;
@@ -54,9 +61,10 @@ nav ul li a {
   letter-spacing: 0.5px;
 }
 
+/* Main section styling */
 .main {
-  height: 100vh;
-  background-image: url('assets/img/own/pr/2912 Trinity St 1.jpg'); /* Replace with your background image path */
+  height: 100vh; /* Full viewport height */
+  background-image: url('assets/img/own/pr/2912 Trinity St 1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -68,7 +76,7 @@ nav ul li a {
   z-index: -1;
 }
 
-/* Overlay */
+/* Dark blue overlay for main section */
 .main::before {
   content: "";
   position: absolute;
@@ -76,10 +84,11 @@ nav ul li a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 51, 0.473); /* Dark blue overlay */
+  background-color: rgba(0, 0, 51, 0.473);
   z-index: 1;
 }
 
+/* Explore button styling in main section */
 .explore {
   position: absolute;
   bottom: 50px;
@@ -87,7 +96,7 @@ nav ul li a {
   color: white;
   font-size: 1.2em;
   letter-spacing: 2px;
-  z-index: 2; /* Ensures text is above overlay */
+  z-index: 2;
 }
 
 .explore .line {
@@ -97,8 +106,9 @@ nav ul li a {
   margin: 10px auto 0;
 }
 
+/* Introduction section styling */
 .intro {
-  height: 100vh;
+  height: 100vh; /* Full viewport height */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,7 +116,7 @@ nav ul li a {
   text-align: center;
   padding: 0 20px;
   background-color: #fff;
-  gap:25px;
+  gap: 25px;
 }
 
 .intro p {
@@ -115,14 +125,16 @@ nav ul li a {
   color: #333;
   max-width: 650px;
 }
-.intro h2{
+
+.intro h2 {
   font-size: 2.7em;
 }
-.title{
+
+.title {
   color: #0D4378 !important;
 }
 
-
+/* Project section styling */
 .project {
   margin: 50px 0;
   height: 100vh;
@@ -131,8 +143,7 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding:50px 20px;
-  /* background-color: #f9f9f9; */
+  padding: 50px 20px;
 }
 
 .project-image img {
@@ -166,19 +177,18 @@ nav ul li a {
   color: #666;
 }
 
-
-/* Service Section Layout */
+/* Service section styling */
 .service-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 40px;
-  height: 100vh; /* Each section takes full viewport height */
+  height: 100vh;
   gap: 40px;
-  background-color: #f7f7f7;
+  background-color: #f0f4f8;
 }
 
-/* Alternating Background for Visual Contrast */
+/* Alternating background for service sections */
 .service-section:nth-child(even) {
   background-color: #ffffff;
 }
@@ -192,20 +202,22 @@ nav ul li a {
 }
 
 .service-content h2 {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 400;
   color: #333;
   margin-bottom: 20px;
 }
 
 .service-content p {
-  font-size: 1em;
+  font-size: 1.6em;
   line-height: 1.6;
   color: #555;
   margin-bottom: 20px;
 }
 
-
+.service-content a {
+  font-size: 1.6em;
+}
 
 .service-link {
   font-size: 1em;
@@ -226,20 +238,253 @@ nav ul li a {
 
 .service-image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   border-radius: 10px;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for service sections */
 @media (max-width: 768px) {
   .service-section {
     flex-direction: column;
     text-align: center;
-    height: auto; /* Adjust for smaller screens */
+    height: 100vh; /* Adjusted for smaller screens */
     padding: 20px;
+    align-content: center;
   }
 
   .service-image img {
     max-width: 100%;
   }
+}
+
+/* Process fullscreen section styling */
+.process-fullscreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.process-content {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+}
+
+.process-content h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.process-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.process-link {
+  font-size: 1em;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+
+
+.process-link:hover {
+  color: #555;
+  border-color: #555;
+}
+
+.process-image {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.process-image img {
+  width: 80%;
+  height: 450px;
+  border-radius: 8px;
+}
+
+/* Responsive adjustments for process sections */
+@media (max-width: 768px) {
+  .process-fullscreen {
+    flex-direction: column;
+    text-align: center;
+    height: 80vh; /* Adjusted for smaller screens */
+    padding: 20px;
+  }
+
+  .process-content, .process-image {
+    max-width: 100%;
+  }
+}
+
+/* Contact Section */
+.contact-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8;
+  position: relative;
+  overflow: hidden;
+  background-image: url('assets/img/c_line4.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+  color: #003366;
+}
+
+.contact-info a {
+  font-size: 4em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.contact-info p {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 0;
+  padding: 10px;
+}
+
+/* Contact Info Section */
+.contact-info-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-image {
+  flex: 1;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.contact-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  gap: 30px;
+}
+
+.contact-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-details h3 {
+  font-size: 2em;
+  font-weight: 500;
+  color: black !important;
+  margin: 0;
+}
+
+.contact-details a {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #0D4378 !important;
+  margin: 0;
+}
+
+.contact-details p a {
+  color: #0D4378 !important;
+  font-size: 1.5em;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.contact-details p a:hover {
+  color: #0D4378 !important;
+}
+
+.contact-details img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f4f8;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* Responsive adjustments for contact info section */
+@media (max-width: 768px) {
+  .service-content p,.process-content p{
+    font-size: 16px;
+  }
+  .service-section{
+    display: block;
+  }
+  .service-content{
+    gap:0;
+  }
+  .service-content h2 , .process-content h2{
+    font-size: 24px;  
+    font-weight: 700;
+  }
+  .contact-info a{
+    font-size: 2em;
+  }
+  
+.contact-info p {
+  font-size: 1rem;
+}
+.contact-section{
+  background-position:right 80px;
+}
+
+.contact-info-section {
+  display: block;
+}
+
+.contact-info-section iframe{
+  width: 100%;
+  height: 250px;
+  margin-bottom: 30px;
+}
+.contact-details div h3{
+  font-size: 1.3em;
+}
+
 }
