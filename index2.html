@@ -14,17 +14,36 @@
     <!-- Navigation Bar -->
     <header>
         <img src="./assets/img/logo-white-version.png" width="120" height="35" alt="" class="logo">
-        <nav>
+        
+        <!-- Hamburger Button for Mobile -->
+        <button class="hamburger" onclick="toggleSidebar()">☰</button>
+      
+        <!-- Desktop Navigation (Visible on larger screens) -->
+        <nav class="desktop-nav">
             <ul>
-                <li> <a href="/" class="main_link"> home </a> </li>
-                <li><a href="./innerpages/about.html" class="main_link"> About Us </a></li>
-                <li> <a href="./innerpages/portfolio.html" class="main_link"> Projects </a> </li>
-                <!-- <li> <a href="./innerpages/blog.html" class="main_link"> news </a> </li> -->
-                <li> <a href="./innerpages/services.html" class="main_link"> Services </a> </li>
-                <li> <a href="./innerpages/contact.html" class="main_link"> contact </a> </li>
+                <li><a href="/" class="main_link">Home</a></li>
+                <li><a href="./innerpages/about.html" class="main_link">About Us</a></li>
+                <li><a href="./innerpages/portfolio.html" class="main_link">Projects</a></li>
+                <li><a href="./innerpages/services.html" class="main_link">Services</a></li>
+                <li><a href="./innerpages/contact.html" class="main_link">Contact</a></li>
             </ul>
         </nav>
+    
+        <!-- Sidebar Menu (Visible on mobile) -->
+        <div id="sidebar" class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="/" class="main_link">Home</a></li>
+                    <li><a href="./innerpages/about.html" class="main_link">About Us</a></li>
+                    <li><a href="./innerpages/portfolio.html" class="main_link">Projects</a></li>
+                    <li><a href="./innerpages/services.html" class="main_link">Services</a></li>
+                    <li><a href="./innerpages/contact.html" class="main_link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    
+      
 
     <!-- Main Section -->
     <section class="full-section main">

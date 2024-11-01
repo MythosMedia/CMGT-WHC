@@ -488,3 +488,80 @@ nav ul li a {
 }
 
 }
+
+
+/* Default styling for the desktop navigation */
+.desktop-nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 45px;
+}
+
+.desktop-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+}
+
+/* Sidebar styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #0D4378 !important;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+/* Hamburger button styling */
+.hamburger {
+  display: none;
+  font-size: 2em;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .desktop-nav {
+      display: none; /* Hide desktop nav on mobile */
+  }
+
+  .hamburger {
+      display: block; /* Show hamburger button on mobile */
+  }
+}
+
+/* Sidebar open state */
+.sidebar.open {
+  left: 0; /* Slide sidebar into view */
+}
