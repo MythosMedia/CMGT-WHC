@@ -1,5 +1,5 @@
 on: push
-name: 🚀 Deploy website on WHC
+name: 🚀 Deploy website on WHC site
 jobs:
   web-deploy:
     name: 🎉 Deploy
